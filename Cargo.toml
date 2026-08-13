@@ -1,0 +1,9 @@
+[package]
+name = "ephemeria-core"
+version = "0.1.0"
+edition = "2021"
+authors = ["Alexander Galay <alexander.galay@proton.me>"]
+license = "AGPL-3.0-only"
+
+[dependencies]
+serde = { version = "1.0.229", features = ["derive"] }
