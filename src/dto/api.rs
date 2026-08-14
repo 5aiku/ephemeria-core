@@ -12,11 +12,13 @@ pub enum Status {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct HealthStatusResponse {
     pub status: Status,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct ManifestResponse {
     pub season_name: String,
     pub season_description: String,
@@ -29,6 +31,7 @@ pub struct ManifestResponse {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct ServerStatusResponse {
     pub online: bool,
     pub players: u16,
@@ -38,6 +41,7 @@ pub struct ServerStatusResponse {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct LauncherVersionResponse {
     pub latest_version: String,
     pub hash: String,
