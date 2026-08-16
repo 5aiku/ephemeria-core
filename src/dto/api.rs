@@ -25,6 +25,7 @@ pub struct ManifestResponse {
     pub game_version: String,
     pub java_version: String,
     pub mod_loader: Option<String>,
+    pub mods_hash: Option<String>,
     pub server_ip: String,
     pub server_port: u16,
 }
